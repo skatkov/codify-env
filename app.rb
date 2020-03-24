@@ -1,8 +1,10 @@
 require 'pry'
 
 
-def solution(a)
-	#code goes here
+module App
+  def self.solution(a)
+    #code goes here
+  end
 end
 
 
