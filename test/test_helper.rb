@@ -2,4 +2,5 @@ ENV["RACK_ENV"] = "test"
 require "minitest/autorun"
 require "pry"
 
+require_relative "../app_1"
 require_relative "../app"
