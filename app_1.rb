@@ -8,6 +8,28 @@ module App1
 			!a.include?(num)
 		end
 	end
+
+	def self.solution2(a)
+		return nil unless a.kind_of?(Array)
+
+		n = a.size
+		count = [0]*(n+1)
+
+		(0..n).each do |k|
+			if(!a[k].nil?) && (n >= a[k]) && (a[k] > 0)
+				count[a[k]] += 1
+			end
+		end
+
+		(1..(n+1)).each do |k|
+			if count[k] == 0
+				return k
+			end
+		end
+
+
+		return n+1
+	end
 end
 
 

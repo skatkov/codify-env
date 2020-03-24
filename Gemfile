@@ -6,3 +6,5 @@ gem 'rake'
 gem 'minitest'
 gem 'rubocop', require: false
 gem 'rubocop-performance'
+gem 'm'
+gem 'benchmark-ips'
